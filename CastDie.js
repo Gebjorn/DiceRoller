@@ -8,9 +8,7 @@ const dieSize = [4, 6, 8, 10, 12, 20, 100];
 // function castDie(sides){
 //     return Math.ceil(Math.random() * sideCount(sides));
 // }
-const castDie = sides => {
-    return Math.ceil(Math.random() * sideCount(sides));
-}
+const castDie = sides => Math.ceil(Math.random() * sideCount(sides));
 
 // Add desired dieSize to console for testing
 console.log(castDie());
@@ -21,5 +19,5 @@ function sideCount(sides){
             return dieSize[i];
         }
     }
-    return null;
+    return 0;
 }
